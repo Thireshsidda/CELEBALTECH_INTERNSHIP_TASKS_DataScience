@@ -1,0 +1,3 @@
+azure-ai-language-conversations
+azure-core
+Django==3.2.8
