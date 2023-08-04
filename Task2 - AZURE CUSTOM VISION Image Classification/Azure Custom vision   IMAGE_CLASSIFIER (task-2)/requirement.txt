@@ -1,0 +1,4 @@
+azure-cognitiveservices-vision-customvision
+msrest==0.6.21
+matplotlib
+Flask==2.0.1
