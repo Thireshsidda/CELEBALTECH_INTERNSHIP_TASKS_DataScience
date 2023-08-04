@@ -1,0 +1,4 @@
+azure-ai-textanalytics
+azure-core==1.23.0
+Flask==2.0.1
+Flask

@@ -1,0 +1,5 @@
+azure-ai-textanalytics
+azure-core==1.23.0
+fastapi
+uvicorn
+
