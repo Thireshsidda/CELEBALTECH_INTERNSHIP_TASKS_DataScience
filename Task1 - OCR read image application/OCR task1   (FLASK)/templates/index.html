@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Text Extraction</title>
+</head>
+<body>
+    <h1>Image Text Extraction</h1>
+    <form action="{{ url_for('extract') }}" method="POST">
+        <label for="image_url">Image URL:</label><br>
+        <input type="text" id="image_url" name="image_url" required><br><br>
+        <input type="submit" value="Extract Text">
+    </form>
+</body>
+</html>

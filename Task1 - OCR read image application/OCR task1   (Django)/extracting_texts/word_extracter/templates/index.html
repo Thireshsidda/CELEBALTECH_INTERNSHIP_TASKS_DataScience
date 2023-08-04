@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Text Extraction</title>
+</head>
+<body>
+    <h1>Image Text Extraction</h1>
+
+    <h2>Extract from URL</h2>
+    <form action="/extract/url" method="GET">
+        <label for="image_url">Image URL:</label>
+        <input type="text" name="image_url" id="image_url">
+        <button type="submit">Extract</button>
+    </form>
+
+    <h2>Extract from File</h2>
+    <form action="/extract/file" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image_file">
+        <button type="submit">Extract</button>
+    </form>
+
+    <h2>Extract from Folder</h2>
+    <form action="/extract/folder" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image_folder" multiple>
+        <button type="submit">Extract</button>
+    </form>
+</body>
+</html>
+

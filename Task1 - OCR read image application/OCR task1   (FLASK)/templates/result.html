@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Extraction Result</title>
+</head>
+<body>
+    <h1>Text Extraction Result</h1>
+    {% if extracted_text %}
+        <h2>Extracted Text:</h2>
+        <pre>{{ extracted_text }}</pre>
+    {% else %}
+        <p>No text extracted from the provided image.</p>
+    {% endif %}
+    <br>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
